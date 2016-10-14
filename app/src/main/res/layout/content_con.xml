@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.hint.txtnum"
+        android:textSize="17dp"
+        android:id="@+id/txtnumber"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/main.hint.inputnum"
+        android:ems="15"
+        android:id="@+id/inputNumber"
+        android:layout_below="@+id/txtnumber"
+        android:layout_alignLeft="@+id/txtnumber"
+        android:layout_alignStart="@+id/txtnumber"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/main.button.btncon"
+        android:id="@+id/btnConvertion"
+        android:layout_below="@+id/inputNumber"
+        android:layout_alignLeft="@+id/inputNumber"
+        android:layout_alignStart="@+id/inputNumber"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnConvertion"
+        android:layout_alignStart="@+id/btnConvertion"
+        android:layout_alignLeft="@+id/txtnumber"
+        android:layout_alignRight="@id/txtnumber"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputbill100"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentLeft="@+id/btnConvertion"
+        android:layout_alignParentStart="@+id/btnConvertion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputbill50"
+        android:layout_below="@+id/inputbill100"
+        android:layout_alignParentLeft="@+id/inputbill100"
+        android:layout_alignParentStart="@+id/inputbill100"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputbill20"
+        android:layout_below="@+id/inputbill50"
+        android:layout_alignParentLeft="@+id/inputbill50"
+        android:layout_alignParentStart="@+id/inputbill50"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputcoin10"
+        android:layout_below="@+id/inputbill20"
+        android:layout_alignParentLeft="@+id/inputbill20"
+        android:layout_alignParentStart="@+id/inputbill20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputcoin5"
+        android:layout_below="@+id/inputcoin10"
+        android:layout_alignParentLeft="@+id/inputcoin10"
+        android:layout_alignParentStart="@+id/inputcoin10"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputcoin2"
+        android:layout_below="@+id/inputcoin5"
+        android:layout_alignParentLeft="@+id/inputcoin5"
+        android:layout_alignParentStart="@+id/inputcoin5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputcoin1"
+        android:layout_below="@+id/inputcoin2"
+        android:layout_alignParentLeft="@+id/inputcoin2"
+        android:layout_alignParentStart="@+id/inputcoin2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputcent50"
+        android:layout_below="@+id/inputcoin1"
+        android:layout_alignParentLeft="@+id/inputcoin1"
+        android:layout_alignParentStart="@+id/inputcoin1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputcent20"
+        android:layout_below="@+id/inputcent50"
+        android:layout_alignParentLeft="@+id/inputcent50"
+        android:layout_alignParentStart="@+id/inputcent50"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputcent10"
+        android:layout_below="@+id/inputcent20"
+        android:layout_alignParentLeft="@+id/inputcent20"
+        android:layout_alignParentStart="@+id/inputcent20"/>
+
+</RelativeLayout>
